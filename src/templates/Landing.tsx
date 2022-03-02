@@ -13,15 +13,15 @@ const Landing = () => (
       <div className={landCss.navLeft}>
         <div className={landCss.title}>Meshmill</div>
       </div>
-      <div className={landCss.navRight}>
+      <div className={"flex space-x-4 justify-end mr-4 " + landCss.navRight}>
         <button onClick={() => moveToSection("home")}>Home</button>
         <button onClick={() => moveToSection("about")}>About</button>
-        <button onClick={() => moveToSection("features")}>Features</button>
-        <button onClick={() => moveToSection("genesis")}>Genesis</button>
+        {/* <button onClick={() => moveToSection("features")}>Features</button>
+        <button onClick={() => moveToSection("genesis")}>Genesis</button> */}
         <button onClick={() => moveToSection("contact")}>Contact</button>
       </div>
     </div>
-    <div className={landCss.wrapper}>
+    <div className={"flex justify-center " + landCss.wrapper}>
       <img className={landCss.bgImg} src="/images/landing_bg.png"></img>
       <div className={landCss.titleWrapper}>
         <div className={landCss.title}>MESHMILL</div>

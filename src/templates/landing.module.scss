@@ -35,10 +35,6 @@
     }
     .navRight {
       width: 30%;
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      margin-right: 50px;
       button {
         border: 0;
         background-color: transparent;
@@ -52,9 +48,6 @@
     position: relative;
     z-index: 1;
     height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
   .bgImg {
     position: absolute;
