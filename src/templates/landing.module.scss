@@ -65,7 +65,6 @@
     z-index: 3;
     .title {
       color: white;
-      font-size: 140px;
       font-style: normal;
       font-weight: 700;
       line-height: 119px;
@@ -86,10 +85,6 @@
     }
     .playBtn {
       cursor: pointer;
-      width: 100%;
-      display: flex;
-      align-items: flex-end;
-      justify-content: center;
       height: 15%;
       // margin-top: 170px;
     }
