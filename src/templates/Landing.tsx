@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 
 import landCss from "./landing.module.scss";
+import { Timeline } from "./Timeline";
 
 const moveToSection = (secName: any) => {
   console.log(secName);
@@ -104,6 +105,9 @@ const Landing: React.FC = () => {
               <img src="/images/ellipsis.png"></img>
             </div>
           </div>
+        </div>
+        <div>
+          <Timeline></Timeline>
         </div>
         <style jsx>
           {`
