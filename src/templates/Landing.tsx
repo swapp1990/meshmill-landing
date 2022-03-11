@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import Link from "next/link";
 
 import landCss from "./landing.module.scss";
 
@@ -48,6 +49,7 @@ const Landing: React.FC = () => {
         setWaitlistApiRes(res.data);
       });
   };
+
   return (
     <>
       <div className={landCss.landing_main}>
@@ -59,10 +61,17 @@ const Landing: React.FC = () => {
             className={"flex space-x-4 justify-end mr-4 " + landCss.navRight}
           >
             <button onClick={() => moveToSection("home")}>Home</button>
-            <button onClick={() => moveToSection("about")}>About</button>
+            {/* <button onClick={() => moveToSection("about")}>About</button> */}
+
             {/* <button onClick={() => moveToSection("features")}>Features</button>
         <button onClick={() => moveToSection("genesis")}>Genesis</button> */}
-            <button onClick={() => moveToSection("contact")}>Contact</button>
+            <button
+              onClick={() =>
+                window.open("https://twitter.com/MeshMill3", "_blank")
+              }
+            >
+              Contact
+            </button>
           </div>
         </div>
         <div className={"flex justify-center " + landCss.wrapper}>
@@ -77,8 +86,14 @@ const Landing: React.FC = () => {
             </div>
             <div className={landCss.playBtn}>
               {/* <img src="/images/playGame.png" height={"80px"}></img> */}
-              <div className="text-3xl mb-3 mt-3">Join the waitlist now</div>
-              {!waitlistApiRes && (
+              <a
+                className={"text-3xl mb-3 underline " + landCss.waitlistLink}
+                target="_blank"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfJQYizFjN3miwBFqblGT0BXpZAs12XzzWxEjW2vC2mpYQsoQ/viewform?usp=sf_link"
+              >
+                <span className="text-primary-500">Join the waitlist now</span>
+              </a>
+              {/* {!waitlistApiRes && (
                 <div className="flex space-x-4">
                   <input
                     type="text"
@@ -97,14 +112,28 @@ const Landing: React.FC = () => {
                     Submit
                   </button>
                 </div>
-              )}
-              {waitlistApiRes && <div>You are on the waiting list!</div>}
+              )} */}
+              {/* {waitlistApiRes && <div>You are on the waiting list!</div>} */}
             </div>
             <div className={landCss.scroll}>
               <img src="/images/ellipsis.png"></img>
             </div>
           </div>
         </div>
+        {/* <div className={"flex justify-center " + landCss.about}>
+          <div>
+            Web3-based game development is inaccessible for many indie game
+            developers who don’t know how NFTs and Web3 technology works under
+            the hood. No one–not game developers or players–are able to use Web3
+            technology in existing closed gaming ecosystems such as consoles.
+          </div>
+          <div>
+            In response, we're developing tools to help create NFT games that
+            can be played on consoles or mobile devices and deployed on
+            different blockchains like Polygon or StarkNet. It also assists
+            developers to create in-game, interoperable NFT assets.
+          </div>
+        </div> */}
       </div>
     </>
   );

@@ -49,6 +49,12 @@
     z-index: 1;
     height: 100vh;
   }
+  .about {
+    margin-top: 20px;
+    margin-left: 200px;
+    margin-right: 200px;
+    font-size: 30px;
+  }
   .bgImg {
     position: absolute;
     z-index: 2;
@@ -87,6 +93,8 @@
       cursor: pointer;
       height: 15%;
       // margin-top: 170px;
+      .waitlistLink {
+      }
     }
     .scroll {
       height: 10%;
@@ -316,6 +324,7 @@
     }
   }
 }
+
 .borderTitle {
   position: relative;
   .title {
