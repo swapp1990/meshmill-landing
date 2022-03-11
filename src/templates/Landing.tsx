@@ -59,7 +59,7 @@ const Landing: React.FC = () => {
             {/* <button className={landCss.title}>MeshMill</button> */}
           </div>
           <div
-            className={"flex space-x-4 justify-end mr-8 " + landCss.navRight}
+            className={"flex space-x-4 justify-end mr-4 sm:mr-8 pr-2 pl-2 " + landCss.navRight}
           >
             <button onClick={() => moveToSection("home")}>Home</button>
             <button onClick={() => moveToSection("about")}>About</button>
