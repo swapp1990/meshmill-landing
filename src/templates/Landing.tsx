@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import axios from "axios";
 import Link from "next/link";
 
@@ -55,7 +55,7 @@ const Landing: React.FC = () => {
       <div className={landCss.landing_main}>
         <div className={landCss.navigation}>
           <div className={landCss.navLeft}>
-            <div className={landCss.title}>Meshmill</div>
+            <div className={landCss.title}>MeshMill</div>
           </div>
           <div
             className={"flex space-x-4 justify-end mr-4 " + landCss.navRight}
