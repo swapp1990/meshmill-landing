@@ -1,6 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
 import axios from "axios";
-import Link from "next/link";
 
 import landCss from "./landing.module.scss";
 
