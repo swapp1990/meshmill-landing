@@ -105,12 +105,6 @@ const Landing: React.FC = () => {
             </div>
           </div>
         </div>
-        <style jsx>
-          {`
-            .wrapper {
-            }
-          `}
-        </style>
       </div>
     </>
   );
