@@ -12,6 +12,7 @@ module.exports = {
       "4xl": "2.25rem",
       "5xl": "3rem",
       "6xl": "4rem",
+      "8xl": "8rem",
       "9xl": "8rem",
     },
     extend: {
@@ -26,6 +27,9 @@ module.exports = {
           700: "#026592",
           800: "#014C6E",
           900: "#013349",
+        },
+        secondary: {
+          100: "#fd681f"
         },
         gray: {
           100: "#f7fafc",
@@ -43,6 +47,22 @@ module.exports = {
         hero: "4.5rem",
       },
     },
+    screens: {
+      'sm': '640px',
+      // => @media (min-width: 640px) { ... }
+
+      'md': '768px',
+      // => @media (min-width: 768px) { ... }
+
+      'lg': '1024px',
+      // => @media (min-width: 1024px) { ... }
+
+      'xl': '1280px',
+      // => @media (min-width: 1280px) { ... }
+
+      '2xl': '1536px',
+      // => @media (min-width: 1536px) { ... }
+    }
   },
   variants: {},
   plugins: [],

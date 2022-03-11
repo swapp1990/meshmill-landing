@@ -32,6 +32,14 @@
         font-size: 30px;
         margin-left: 20px;
       }
+      .logoImg {
+        width: 100px;
+        height: 100px;
+        @media only screen and (max-width: 600px) {
+          width: 60px;
+          height: 60px;
+        }
+      }
     }
     .navRight {
       width: 30%;
@@ -39,6 +47,9 @@
         border: 0;
         background-color: transparent;
         font-size: 22px;
+        @media only screen and (max-width: 600px) {
+          font-size: 18px;
+        }
         color: white;
         cursor: pointer;
       }
@@ -51,9 +62,6 @@
   }
   .about {
     margin-top: 20px;
-    margin-left: 200px;
-    margin-right: 200px;
-    font-size: 30px;
   }
   .bgImg {
     position: absolute;
@@ -79,6 +87,9 @@
       height: 50%;
       display: flex;
       align-items: flex-end;
+      @media only screen and (max-width: 600px) {
+        font-size: 70px;
+      }
     }
     .tagline {
       width: 70%;
