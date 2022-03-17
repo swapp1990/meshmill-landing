@@ -54,7 +54,7 @@ const Landing: React.FC = () => {
       <div className={landCss.landing_main}>
         <div className={landCss.navigation}>
           <div className={"flex align-center justify-start " + landCss.navLeft}>
-            <img className={"ml-2 " + landCss.logoImg} src="images/mm_logo.png"></img>
+            <img className={"ml-4 " + landCss.logoImg} src="images/mm_logo.png"></img>
             {/* <div className={"flex align-center " + landCss.title}>MeshMill</div> */}
             {/* <button className={landCss.title}>MeshMill</button> */}
           </div>
@@ -80,14 +80,15 @@ const Landing: React.FC = () => {
         <div className={"flex justify-center " + landCss.wrapper} id="home">
           <img className={landCss.bgImg} src="/images/landing_bg.png"></img>
           <div className={landCss.titleWrapper}>
-            <div className={"text-9xl " + landCss.title}>
+            <div className={"text-2xl sm:text-8xl sm:pb-8 " + landCss.title}>
               <span className="text-secondary-100">M</span>ESH
               <span className="text-secondary-100">M</span>ILL
             </div>
-            <div className={landCss.tagline}>
-              {/* <div>BUILD.</div> <div>PLAY.</div> <div>EARN.</div> */}
-            </div>
-            <div className="sm:text-4xl text-xl">Opening Closed Gaming Ecosystems</div>
+            {/* <div className={landCss.tagline}>
+              <div>BUILD.</div> <div>PLAY.</div> <div>EARN.</div>
+            </div> */}
+            <div className="sm:text-4xl text-2xl text-center pt-8 sm:pt-32 mb-8 sm:mb-0 ">Web3 Game Development Made Easy</div>
+            <div className="sm:mt-8 sm:ml-64 ml-8 text-sm sm:text-xl sm:mr-64 mr-8 sm:pb-4 text-center">Don't know much about blockchain technology? <br></br>No problem, you can easily build Web3-based games using your favorite game engine with the help of MeshMill tools .</div>
             <div className={landCss.playBtn}>
               {/* <img src="/images/playGame.png" height={"80px"}></img> */}
               <a
@@ -95,7 +96,7 @@ const Landing: React.FC = () => {
                 target="_blank"
                 href="https://docs.google.com/forms/d/e/1FAIpQLSfJQYizFjN3miwBFqblGT0BXpZAs12XzzWxEjW2vC2mpYQsoQ/viewform?usp=sf_link"
               >
-                <span className="text-primary-500">Join the waitlist now</span>
+                <span className="text-primary-500">Join the Waitlist</span>
               </a>
               {/* {!waitlistApiRes && (
                 <div className="flex space-x-4">
@@ -142,7 +143,7 @@ const Landing: React.FC = () => {
         </div>
         <div className={"flex justify-center flex-col mt-16 mb-16"} id="contact">
           <div className="text-center m-8 sm:m-16 text-primary-500 text-2xl sm:text-4xl">CONTACT</div>
-          <div className="text-center text-2xl sm:text-4xl">Email: jenjen@tieredworldstudios.com</div>
+          <div className="text-center text-2xl sm:text-4xl underline"><a href="https://t.me/meshmill"  target="_blank">Telegram: @MeshMill</a></div>
           <div className="text-center text-2xl sm:text-4xl underline">Twitter: <a href="https://twitter.com/MeshMill3" target="_blank">@MeshMill3</a></div>
         </div>
       </div>
