@@ -63,6 +63,7 @@ const Landing: React.FC = () => {
           >
             <button onClick={() => moveToSection("home")}>Home</button>
             <button onClick={() => moveToSection("about")}>About</button>
+            <button onClick={() => moveToSection("pricing")}>Pricing</button>
             <button onClick={() => moveToSection("contact")}>Contact</button>
             {/* <button onClick={() => moveToSection("about")}>About</button> */}
 
@@ -139,6 +140,42 @@ const Landing: React.FC = () => {
             can be played on consoles or mobile devices and deployed on
             different blockchains like Polygon or StarkNet. It also assists
             developers to create in-game, interoperable NFT assets.
+          </div>
+        </div>
+        <div className={"flex justify-center flex-col ml-4 mr-4"} id="pricing">
+          <div className="text-center m-8 sm:m-16 text-primary-500 text-2xl sm:text-4xl">EARLY BIRD PRICING</div>
+          <div className="grid gap-5 lg:grid-cols-3 md:grid-cols-2">
+            <div className="border-2 border-primary-200 rounded-md p-4">
+              <div className="relative flex flex-col items-center justify-center">
+                <h3 className="text-xl font-bold">Indie Developer</h3>
+                <p className="tracking-tight text-gray-500">
+                  <span className="text-sm transform inline-block -translate-y-2.5 relative">$</span>
+                  <span className="text-3xl font-bold text-primary-200">30</span>
+                  <span className="text-sm -translate-y-0.5 inline-block transform">/ user</span>
+                </p>
+              </div>
+            </div>
+            
+            <div className="border-2 border-primary-200 rounded-md p-4">
+              <div className="relative flex flex-col items-center justify-center">
+                <h3 className="text-xl font-bold">High School Student</h3>
+                <p className="tracking-tight text-gray-500">
+                  <span className="text-sm transform inline-block -translate-y-2.5 relative">$</span>
+                  <span className="text-3xl font-bold text-primary-200">15</span>
+                  <span className="text-sm -translate-y-0.5 inline-block transform">/ user</span>
+                </p>
+              </div>
+            </div>
+            
+            <div className="border-2 border-primary-200 rounded-md p-4">
+              <div className="relative flex flex-col items-center justify-center">
+                <h3 className="text-xl font-bold">Studio/School/Non-profit</h3>
+                <p className="tracking-tight text-gray-500">
+                  <span className="text-sm -translate-y-0.5 inline-block transform">Please Contact for Pricing</span>  
+                </p>
+              </div>
+            </div>
+            
           </div>
         </div>
         <div className={"flex justify-center flex-col mt-16 mb-16"} id="contact">
