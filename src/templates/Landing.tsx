@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import axios from "axios";
+import { SocialIcon } from 'react-social-icons';
 
 import landCss from "./landing.module.scss";
+import Link from "next/link";
 
 const moveToSection = (secName: any) => {
   console.log(secName);
@@ -93,11 +95,11 @@ const Landing: React.FC = () => {
             <div className={landCss.playBtn}>
               {/* <img src="/images/playGame.png" height={"80px"}></img> */}
               <a
-                className={"text-3xl mb-3 underline " + landCss.waitlistLink}
+                className={"text-3xl mb-3 underline"}
                 target="_blank"
                 href="https://docs.google.com/forms/d/e/1FAIpQLSfJQYizFjN3miwBFqblGT0BXpZAs12XzzWxEjW2vC2mpYQsoQ/viewform?usp=sf_link"
               >
-                <span className="text-primary-500">Join the Waitlist</span>
+                <span className="text-link-500">Join the Waitlist</span>
               </a>
               {/* {!waitlistApiRes && (
                 <div className="flex space-x-4">
@@ -141,6 +143,11 @@ const Landing: React.FC = () => {
             different blockchains like Polygon or StarkNet. It also assists
             developers to create in-game, interoperable NFT assets.
           </div>
+          <div className="flex justify-center mt-8">
+            <Link href="/brochure">
+              <a target="_blank" className="text-3xl mb-3 underline cursor-pointer"><span className="text-link-500">More Info</span></a>
+            </Link>
+          </div>
         </div>
         <div className={"flex justify-center flex-col ml-4 mr-4"} id="pricing">
           <div className="text-center m-8 sm:m-16 text-primary-500 text-2xl sm:text-4xl">EARLY BIRD PRICING</div>
@@ -180,8 +187,8 @@ const Landing: React.FC = () => {
         </div>
         <div className={"flex justify-center flex-col mt-16 mb-16"} id="contact">
           <div className="text-center m-8 sm:m-16 text-primary-500 text-2xl sm:text-4xl">CONTACT</div>
-          <div className="text-center text-2xl sm:text-4xl underline"><a href="https://t.me/meshmill"  target="_blank">Telegram: @MeshMill</a></div>
-          <div className="text-center text-2xl sm:text-4xl underline">Twitter: <a href="https://twitter.com/MeshMill3" target="_blank">@MeshMill3</a></div>
+          <div className="text-center text-2xl sm:text-4xl"><SocialIcon network="telegram"/> <a href="https://t.me/meshmill"  target="_blank" className="text-link-500 underline  ">@MeshMill</a></div>
+          <div className="text-center text-2xl sm:text-4xl mt-2 sm:mt-2"> <SocialIcon network="twitter"/> <a href="https://twitter.com/MeshMill3" className="underline text-link-500" target="_blank"> @MeshMill3</a></div>
         </div>
       </div>
     </>

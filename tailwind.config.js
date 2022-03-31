@@ -31,6 +31,9 @@ module.exports = {
         secondary: {
           100: "#fd681f"
         },
+        link: {
+          500: "rgb(255, 214, 48)",
+        },
         gray: {
           100: "#f7fafc",
           200: "#edf2f7",

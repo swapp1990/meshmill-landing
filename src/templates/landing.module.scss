@@ -112,9 +112,6 @@
     .playBtn {
       cursor: pointer;
       height: 15%;
-      // margin-top: 170px;
-      .waitlistLink {
-      }
     }
     .scroll {
       height: 10%;
@@ -342,6 +339,14 @@
         cursor: pointer;
       }
     }
+  }
+}
+
+.pdf_main {
+  height: 90vh;
+  margin: 20px;
+  @media only screen and (max-width: 600px) {
+    margin: 0px;
   }
 }
 
