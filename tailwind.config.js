@@ -29,7 +29,7 @@ module.exports = {
           900: "#013349",
         },
         secondary: {
-          100: "#fd681f"
+          100: "#fc4e33"
         },
         link: {
           500: "rgb(255, 214, 48)",

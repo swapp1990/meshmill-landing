@@ -65,7 +65,7 @@ const Landing: React.FC = () => {
           >
             <button onClick={() => moveToSection("home")}>Home</button>
             <button onClick={() => moveToSection("about")}>About</button>
-            <button onClick={() => moveToSection("pricing")}>Pricing</button>
+            {/* <button onClick={() => moveToSection("pricing")}>Pricing</button> */}
             <button onClick={() => moveToSection("contact")}>Contact</button>
             {/* <button onClick={() => moveToSection("about")}>About</button> */}
 
@@ -90,8 +90,8 @@ const Landing: React.FC = () => {
             {/* <div className={landCss.tagline}>
               <div>BUILD.</div> <div>PLAY.</div> <div>EARN.</div>
             </div> */}
-            <div className="sm:text-4xl text-2xl text-center pt-8 sm:pt-32 mb-8 sm:mb-0 ">Web3 Game Development Made Easy</div>
-            <div className="sm:mt-8 sm:ml-64 ml-8 text-sm sm:text-xl sm:mr-64 mr-8 sm:pb-4 text-center">Don't know much about blockchain technology? <br></br>No problem, you can easily build Web3-based games using your favorite game engine with the help of MeshMill tools .</div>
+            <div className="sm:text-4xl text-2xl text-center pt-8 sm:pt-32 mb-8 sm:mb-0 ">The Asset Layer of Metaverse</div>
+            <div className="sm:mt-8 sm:ml-64 ml-8 text-sm sm:text-xl sm:mr-64 mr-8 sm:pb-4 text-center">MeshMill is building technology that enables content creators to build in-game assets that traverse securely through metaverses while preserving their utility value.</div>
             <div className={landCss.playBtn}>
               {/* <img src="/images/playGame.png" height={"80px"}></img> */}
               <a
@@ -149,7 +149,14 @@ const Landing: React.FC = () => {
             </Link>
           </div>
         </div>
-        <div className={"flex justify-center flex-col ml-4 mr-4"} id="pricing">
+        <div className={"flex justify-center flex-col ml-4 mr-4"} id="lifecycle">
+          <div className="text-center m-8 sm:m-16 text-primary-500 text-2xl sm:text-4xl">Lifecycle of an Asset</div>
+          <div className="border-2 p-2">
+              <img src="/images/lifecycle.jpeg"></img>
+          </div>
+          
+        </div>
+        {/* <div className={"flex justify-center flex-col ml-4 mr-4"} id="pricing">
           <div className="text-center m-8 sm:m-16 text-primary-500 text-2xl sm:text-4xl">EARLY BIRD PRICING</div>
           <div className="grid gap-5 lg:grid-cols-3 md:grid-cols-2">
             <div className="border-2 border-primary-200 rounded-md p-4">
@@ -184,7 +191,7 @@ const Landing: React.FC = () => {
             </div>
             
           </div>
-        </div>
+        </div> */}
         <div className={"flex justify-center flex-col mt-16 mb-16"} id="contact">
           <div className="text-center m-8 sm:m-16 text-primary-500 text-2xl sm:text-4xl">CONTACT</div>
           <div className="text-center text-2xl sm:text-4xl"><SocialIcon network="telegram"/> <a href="https://t.me/meshmill"  target="_blank" className="text-link-500 underline  ">@MeshMill</a></div>
